@@ -24,8 +24,9 @@ class DatabaseSeeder extends Seeder
         $this->call(WorldTableSeeder::class);
 
         DB::table('users')->insert([
-            'name' => 'Darwin Quiroz',
-            'email' => 'darquiroz@gmail.com',
+            'name' => 'Administrador',
+            'email' => 'admin@admin.com',
+            'creted_at' => now(),
             'password' => Hash::make('password')
         ]);
     }
